@@ -1,0 +1,12 @@
+{
+  "resource": {
+    "Id": 1,
+    "Username": "jdoe",
+    "DisplayName": "John Doe",
+    "Points": 10,
+    "RoleId": 2,
+    "RoleName": "President"
+  },
+  "status": "Good",
+  "statusDetails": ""
+}

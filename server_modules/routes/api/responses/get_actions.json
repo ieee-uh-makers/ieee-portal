@@ -1,0 +1,31 @@
+{
+    "resource": [
+        {
+            "Id": 1,
+            "Name": "Read Member",
+            "Action": "Members/*/Read"
+        },
+        {
+            "Id": 2,
+            "Name": "Write Member",
+            "Action": "Members/*/Write"
+        },
+        {
+            "Id": 3,
+            "Name": "Write Member Password",
+            "Action": "Members/*/WritePassword"
+        },
+        {
+            "Id": 4,
+            "Name": "Read Role",
+            "Action": "Roles/*/Read"
+        },
+        {
+            "Id": 5,
+            "Name": "Write Role",
+            "Action": "Roles/*/Write"
+        }
+],
+    "status": "Good",
+    "statusDetails": ""
+}

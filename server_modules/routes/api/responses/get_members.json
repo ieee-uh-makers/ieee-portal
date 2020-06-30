@@ -1,0 +1,38 @@
+{
+  "resource": [
+    {
+      "Id": 1,
+      "Username": "jdoe",
+      "DisplayName": "John Doe",
+      "Points": 10,
+      "RoleId": 2,
+      "RoleName": "President"
+    },
+    {
+      "Id": 2,
+      "Username": "goku",
+      "DisplayName": "Goku",
+      "Points": 25,
+      "RoleId": 3,
+      "RoleName": "Vice President"
+    },
+    {
+      "Id": 3,
+      "Username": "saitama",
+      "DisplayName": "Saitama",
+      "Points": 300,
+      "RoleId": 4,
+      "RoleName": "Marketing"
+    },
+    {
+      "Id": 4,
+      "Username": "clark",
+      "DisplayName": "Clark",
+      "Points": 20,
+      "RoleId": 12,
+      "RoleName": "SAC Director"
+    }
+  ],
+  "status": "Good",
+  "statusDetails": ""
+}
