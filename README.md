@@ -142,6 +142,14 @@ $ python server.py
  * Debugger PIN: 233-533-091
  * Running on http://0.0.0.0:10000/ (Press CTRL+C to quit)
 ```
+
+If the output complains about missing modules like ```flask``` or ```pyotp``` then run:
+
+```bash
+pip3 install flask
+pip3 install pyotp
+```
+
 #### Step 3
 
 Test the server by opeinging a web browser and navigating to https://portal.ieee.ece.uh.edu/. You should see a login page.
