@@ -162,7 +162,7 @@ If the output complains about missing modules like ```flask``` or ```pyotp``` pe
 
 #### Step 4
 
-Test the server by opening a web browser and navigating to https://portal.ieee.ece.uh.edu/. You should see a login page.
+Test the server by opening a web browser and navigating to http://portal.ieee.ece.uh.edu/. You should see a login page.
 
 The server listens for http traffic on port 10000. In the future, the server will also listen for https traffic on port 10001.
 
