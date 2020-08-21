@@ -2,6 +2,8 @@ from flask import Blueprint, send_file, jsonify, request
 import pyotp
 
 get_member_tfa_uri = Blueprint('get_member_tfa_uri', __name__)
+
+
 @get_member_tfa_uri.route('/api/memberTFAUri', methods=['GET'])
 def handler():
     args = request.args

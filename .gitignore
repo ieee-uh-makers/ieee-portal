@@ -3,8 +3,9 @@ node_modules
 *.pem
 *.cer
 *.pyc
-/dist
-/config.json
+dist
+config.json
+venv
 
 # local env files
 .env.local

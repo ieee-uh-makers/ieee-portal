@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, './venv/Lib/site-packages')
+
 from flask import Flask, send_from_directory, send_file, redirect
 from server_modules.routes.api.post_login import post_login
 from server_modules.routes.api.get_member import get_member
@@ -20,18 +23,22 @@ app.register_blueprint(get_roles)
 app.register_blueprint(get_role)
 app.register_blueprint(get_actions)
 
+
 @app.route('/')
 def get_root_main_file():
     return send_file('./dist/index.html')
+
 
 @app.route('/<path:path>')
 def get_root_files(path):
     return send_from_directory('./dist', path)
 
+
 @app.errorhandler(404)
 def not_found(path):
     return redirect('/')
 
+
 # run the application
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000, debug=True)
