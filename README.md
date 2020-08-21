@@ -154,12 +154,7 @@ $ python server.py
  * Debug mode: on
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 233-533-091
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
- * Detected change in 'C:\\Users\\user\\PycharmProjects\\ieee-portal\\server.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 233-533-091
+ * Debugger PIN: 247-565-406
  * Running on http://0.0.0.0:10000/ (Press CTRL+C to quit)
 ```
 
