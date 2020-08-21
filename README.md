@@ -75,9 +75,13 @@ if __name__ == "__main__":
 
 ### Uploading Your Files to the ECE FTP Server
 
+#### Step 1
+
 Use FileZilla to upload files to the ECE FTP Server. Get FileZilla from https://filezilla-project.org/
 
 Open FileZilla.
+
+#### Step 2
 
 Create a New Site. Do this by clicking File > Site Manager ... > My Sites > New Site.
 
@@ -94,6 +98,8 @@ Hit Connect after entering the information.
 
 You should see a ```public_html``` folder in the Remote Site section.
 
+#### Step 3
+
 If your Windows username is ```jdoe```, your cloned project should live in the ```C:\Users\jdoe\PycharmProjects\ieee-portal``` folder. In the Local Site section, navigate to this folder.
 
 Upload your project by copying all the files in ```C:\Users\jdoe\PycharmProjects\ieee-portal``` to ```public_html``` of the Remote Site.
@@ -102,7 +108,11 @@ Upload your project by copying all the files in ```C:\Users\jdoe\PycharmProjects
 
 This section requires assistance from ECE IT.
 
+#### Step 1
+
 SSH into the linux server hosting ```portal.ieee.ece.uh.edu``` as ```eceieee```. Enter the pre-shared password.
+
+#### Step 2
 
 Navigate to the location of the ```public_html``` folder.
 
@@ -127,6 +137,7 @@ $ python server.py
  * Debugger PIN: 233-533-091
  * Running on http://0.0.0.0:10000/ (Press CTRL+C to quit)
 ```
+#### Step 3
 
 Test the server by opeinging a web browser and navigating to https://portal.ieee.ece.uh.edu/. You should see a login page.
 
