@@ -123,7 +123,7 @@ SSH into the linux server hosting ```portal.ieee.ece.uh.edu``` as ```eceieee```.
 
 #### Step 2
 
-This step should be "optional" if the steps in _Setting Up Your Development Environment_ have been performed correctly.
+This step should be "optional" if the steps in _Setting Up Your Development Environment_ and _Uploading Your Files to the ECE FTP Server_ have been performed correctly.
 
 If Step 3 does not work, run these commands to install and setup the Portal:
 
