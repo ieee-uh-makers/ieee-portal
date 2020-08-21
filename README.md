@@ -108,6 +108,11 @@ Upload your project by copying all the files in ```C:\Users\jdoe\PycharmProjects
 
 This section requires assistance from ECE IT.
 
+The following steps expect these dependencies to be installed on the Linux server::
+
+* Node Package Manager (NPM). Learn how to install it https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
+* Python 3. Learn more about it at https://www.python.org/downloads/.
+
 #### Step 1
 
 SSH into the linux server hosting ```portal.ieee.ece.uh.edu``` as ```eceieee```. Enter the pre-shared password.
