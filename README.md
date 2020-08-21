@@ -125,7 +125,7 @@ SSH into the linux server hosting ```portal.ieee.ece.uh.edu``` as ```eceieee```.
 
 This step should be "optional" if the steps in _Setting Up Your Development Environment_ have been performed correctly.
 
-If Step 4 does not work, run these commands to install and setup the Portal:
+If Step 3 does not work, run these commands to install and setup the Portal:
 
 ```bash
 cd  # navigate to your home folder
