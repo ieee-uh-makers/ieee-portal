@@ -130,7 +130,7 @@ If Step 3 does not work, run these commands to install and setup the Portal:
 ```bash
 cd  # navigate to your home folder
 cp ieee-portal ieee-portal-bkup  # skip if the folder does not exist
-rm -rf clone https://github.com/ieee-uh-makers/ieee-portal.gitieee-portal  # skip if the folder does not exist
+rm -rf ieee-portal  # skip if the folder does not exist
 git clone https://github.com/ieee-uh-makers/ieee-portal.git
 cd ieee-portal
 pip3 install flask
