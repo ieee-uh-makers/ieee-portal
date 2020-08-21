@@ -100,15 +100,19 @@ You should see a ```public_html``` folder in the Remote Site section.
 
 #### Step 3
 
+Create a new top-level ```ieee-portal``` folder in the Remote Site section.
+
+#### Step 4
+
 If your Windows username is ```jdoe```, your cloned project should live in the ```C:\Users\jdoe\PycharmProjects\ieee-portal``` folder. In the Local Site section, navigate to this folder.
 
-Upload your project by copying all the files in ```C:\Users\jdoe\PycharmProjects\ieee-portal``` to ```public_html``` of the Remote Site.
+Upload your project by copying all the files in ```C:\Users\jdoe\PycharmProjects\ieee-portal``` to ```ieee-portal``` of the Remote Site.
 
 ### Running the server
 
 This section requires assistance from ECE IT.
 
-The following steps expect these dependencies to be installed on the Linux server::
+The following steps expect the dependencies below to be installed on the Linux server:
 
 * Node Package Manager (NPM). Learn how to install it https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 * Python 3. Learn more about it at https://www.python.org/downloads/.
@@ -119,7 +123,23 @@ SSH into the linux server hosting ```portal.ieee.ece.uh.edu``` as ```eceieee```.
 
 #### Step 2
 
-Navigate to the location of the ```public_html``` folder.
+This step should be "optional" if the steps in _Setting Up Your Development Environment_ have been performed correctly.
+
+If Step 4 does not work, run these commands to install and setup the Portal:
+
+```bash
+cd  # navigate to your home folder
+cp ieee-portal ieee-portal-bkup  # skip if the folder does not exist
+rm -rf ieee-portal  # skip if the folder does not exist
+clone https://github.com/ieee-uh-makers/ieee-portal.git
+cd ieee-portal
+pip3 install flask
+pip3 install pyotp
+npm install
+npm run build-dev
+```
+
+#### Step 3
 
 Run ```python3 server.py```.
 
@@ -143,16 +163,11 @@ $ python server.py
  * Running on http://0.0.0.0:10000/ (Press CTRL+C to quit)
 ```
 
-If the output complains about missing modules like ```flask``` or ```pyotp``` then run:
+If the output complains about missing modules like ```flask``` or ```pyotp``` perform the "optional" Step 2.
 
-```bash
-pip3 install flask
-pip3 install pyotp
-```
+#### Step 4
 
-#### Step 3
-
-Test the server by opeinging a web browser and navigating to https://portal.ieee.ece.uh.edu/. You should see a login page.
+Test the server by opening a web browser and navigating to https://portal.ieee.ece.uh.edu/. You should see a login page.
 
 The server listens for http traffic on port 10000. In the future, the server will also listen for https traffic on port 10001.
 
