@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "server": "python3 server.py",
-    "build": "vue-cli-service build",
-    "build-dev": "vue-cli-service build --mode development",
-    "lint": "vue-cli-service lint"
+    "build": "npx vue-cli-service build",
+    "build-dev": "npx vue-cli-service build --mode development",
+    "lint": "npx vue-cli-service lint"
   },
   "dependencies": {
     "authenticator": "^1.1.5",
