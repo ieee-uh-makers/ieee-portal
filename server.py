@@ -1,6 +1,7 @@
 import sys
 sys.path.insert(0, './venv/Lib/site-packages')
 
+import json
 from flask import Flask, send_from_directory, send_file, redirect
 from server_modules.routes.api.post_login import post_login
 from server_modules.routes.api.get_member import get_member
@@ -9,6 +10,9 @@ from server_modules.routes.api.get_members import get_members
 from server_modules.routes.api.get_roles import get_roles
 from server_modules.routes.api.get_role import get_role
 from server_modules.routes.api.get_actions import get_actions
+
+with open('config.json', 'r') as f:
+    config = json.load(f)
 
 # creates a Flask application, named app
 app = Flask(__name__)
@@ -41,4 +45,8 @@ def not_found(path):
 
 # run the application
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=10000, debug=True)
+    if config['HttpsPort']:
+        ssl_context = (config['CertPemFile'], config['KeyPemFile'])
+        app.run(host='0.0.0.0', port=config['HttpsPort'], debug=True, ssl_context=ssl_context)
+    else:
+        app.run(host='0.0.0.0', port=config['HttpPort'], debug=True)

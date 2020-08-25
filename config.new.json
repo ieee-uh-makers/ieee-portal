@@ -1,0 +1,6 @@
+{
+  "HttpPort": 10000,
+  "HttpsPort": 10001,
+  "CertPemFile": "cert.pem",
+  "KeyPemFile": "key.pem"
+}
