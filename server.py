@@ -45,7 +45,7 @@ def not_found(path):
 
 # run the application
 if __name__ == "__main__":
-    if config['HttpsPort']:
+    if ('HttpsPort' in config) and config['HttpsPort']:
         ssl_context = (config['CertPemFile'], config['KeyPemFile'])
         app.run(host='0.0.0.0', port=config['HttpsPort'], debug=True, ssl_context=ssl_context)
     else:
